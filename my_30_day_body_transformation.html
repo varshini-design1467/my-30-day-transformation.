@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f06a9b">
+<title>My 30-Day Body Transformation</title>
+<style>
+:root{--pink:#ed5e98;--pink2:#ffe1ed;--lav:#eee6ff;--mint:#dff7ed;--peach:#fff0df;--ink:#29214d;--muted:#77718e;--paper:#fffafd;--line:#f2d8e5;--shadow:0 8px 24px #4b26500c}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#fff5fa,#f8f4ff 55%,#fff8ef);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+button,input{font:inherit}button{cursor:pointer}.app{max-width:1240px;margin:auto;padding:18px;display:grid;grid-template-columns:220px 1fr;gap:18px}.sidebar,.panel,.hero,.tile{background:#ffffffd9;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}.sidebar{padding:20px;align-self:start;position:sticky;top:12px}.brand{font-size:21px;font-weight:850;line-height:1.2}.brand span{color:var(--pink)}.sub{font-size:12px;color:var(--muted);margin:6px 0 20px}.nav{display:grid;gap:7px}.nav button{border:0;text-align:left;padding:11px 12px;border-radius:12px;background:transparent;color:var(--ink)}.nav button.active,.nav button:hover{background:var(--pink2);color:#a91e5a}.quote{margin-top:24px;padding:16px;background:linear-gradient(145deg,#fff1f7,#f0e8ff);border-radius:16px;color:#8e3564;font-weight:700;text-align:center}.main{min-width:0}.hero{padding:25px 28px;background:linear-gradient(110deg,#ffe1ed,#f2e9ff 55%,#ffefd9);display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:16px}.eyebrow{color:#c3437c;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.12em}.hero h1{font-size:clamp(26px,4vw,40px);line-height:1.1;margin:8px 0}.hero p{max-width:580px;color:#655778;margin-bottom:0}.pill{background:white;border:1px solid #f4cade;border-radius:99px;padding:8px 12px;white-space:nowrap;color:#a52c65;font-weight:750}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}.tile{padding:15px}.statnum{font-size:24px;font-weight:850}.statlabel{font-size:12px;color:var(--muted)}.layout{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.panel{padding:19px;margin-bottom:16px}.panel h2{font-size:18px;margin:0 0 5px}.muted{color:var(--muted);font-size:13px}.calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px;margin-top:15px}.day{min-height:60px;border:1px solid var(--line);border-radius:12px;background:#fff8fc;color:var(--ink);padding:7px 2px}.day strong{display:block;font-size:17px}.day small{font-size:10px;color:var(--muted)}.day.done{background:var(--mint);border-color:#9cdec3}.day.today{outline:2px solid var(--pink);outline-offset:1px}.day.rest{background:#f3efff}.day:disabled{cursor:default;opacity:.55}.btn{border:0;border-radius:13px;background:var(--pink);color:white;font-weight:800;padding:11px 16px}.btn.secondary{background:#f5e6ef;color:#94325f}.btn:active{transform:scale(.99)}.workout-row{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #f4e6ee}.workout-row:last-child{border-bottom:0}.time{font-size:12px;font-weight:800;background:#f6eaff;border-radius:10px;padding:8px;min-width:74px;text-align:center;height:max-content}.workout-row strong{display:block}.exercise-list{padding-left:20px}.exercise-list li{margin:7px 0}.checklist{display:grid;gap:10px;margin-top:12px}.check{display:flex;gap:10px;align-items:center;padding:10px;background:#fff8fc;border:1px solid #f4e5ee;border-radius:12px}.check input{accent-color:var(--pink);width:18px;height:18px}.check.done span{text-decoration:line-through;color:var(--muted)}.meal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.meal{background:#fff8fc;border:1px solid var(--line);border-radius:13px;padding:12px}.meal b{display:block;color:#a52c65;margin-bottom:5px}.meal p{margin:0;font-size:13px}.progressbar{height:11px;background:#f4e7f0;border-radius:99px;overflow:hidden}.progressbar span{display:block;height:100%;width:0;background:linear-gradient(90deg,#ef6d9f,#a995ed);border-radius:99px;transition:width .25s}.week-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:12px}.week{padding:12px;border-radius:13px;background:#fff4f8;border:1px solid var(--line);font-size:12px}.week:nth-child(2){background:#f4efff}.week:nth-child(3){background:#edfbf5}.week:nth-child(4){background:#fff5e6}.week b{display:block;font-size:13px;margin-bottom:5px}.section{scroll-margin-top:20px}.note{font-size:12px;color:var(--muted);margin-top:12px}.footer{text-align:center;color:#a13e70;padding:10px;font-weight:750}.toast{font-size:13px;color:#23845e;min-height:20px}.hide{display:none!important}
+@media(max-width:850px){.app{grid-template-columns:1fr;padding:10px;gap:10px}.sidebar{position:static;padding:13px}.brand{font-size:19px}.sub{margin:4px 0 10px}.nav{display:flex;overflow:auto;gap:5px}.nav button{white-space:nowrap;padding:9px}.quote{display:none}.hero{padding:20px;display:block}.hero .pill{display:inline-block;margin-top:12px}.stats{grid-template-columns:repeat(2,1fr);gap:8px}.layout{grid-template-columns:1fr}.week-grid{grid-template-columns:repeat(2,1fr)}.panel{padding:15px}.calendar{gap:4px}.day{min-height:53px}.day strong{font-size:15px}.day small{font-size:9px}}
+@media(max-width:380px){.calendar{gap:3px}.day{min-height:47px;padding:4px 0}.day strong{font-size:14px}.meal-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand">My 30-Day <span>♥</span><br>Body Transformation</div>
+  <div class="sub">Stronger · Healthier · Happier</div>
+  <nav class="nav">
+    <button class="active" data-go="home">⌂ Home</button><button data-go="plan">▦ My Plan</button><button data-go="workouts">♡ Workouts</button><button data-go="meals">♧ Meal Plan</button><button data-go="progress">↗ Progress Tracker</button><button data-go="habits">✓ Healthy Habits</button>
+  </nav>
+  <div class="quote">You can do it!<br><br>Small steps every day lead to big changes. ♥</div>
+</aside>
+<main class="main">
+<section id="home" class="hero section">
+ <div><div class="eyebrow">Your gentle reset starts here</div><h1>Same girl. Stronger, healthier, more confident. ♥</h1><p>A realistic 30-day beginner journey. Build strength, improve posture and energy, and make habits that feel good — without crash diets.</p></div>
+ <div class="pill">Day <span id="dayBadge">1</span> of 30</div>
+</section>
+<div class="stats">
+ <div class="tile"><div class="statnum" id="workoutCount">0</div><div class="statlabel">Workout days checked</div></div>
+ <div class="tile"><div class="statnum" id="habitCount">0/4</div><div class="statlabel">Today's healthy habits</div></div>
+ <div class="tile"><div class="statnum" id="percent">0%</div><div class="statlabel">30-day consistency</div></div>
+ <div class="tile"><div class="statnum">30 min</div><div class="statlabel">Your daily time goal</div></div>
+</div>
+<div class="layout">
+<div>
+<section id="plan" class="panel section">
+<h2>🌷 Your 30-Day Calendar</h2><div class="muted">Tap a day to mark it complete. Rest days count too.</div>
+<div class="calendar" id="calendar"></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button class="btn secondary" id="reset">Reset tracker</button><span class="muted" style="align-self:center">Saved on this device/browser.</span></div><div id="message" class="toast" aria-live="polite"></div>
+</section>
+<section id="workouts" class="panel section">
+<h2>💗 Today's beginner workout</h2><p class="muted" id="workoutTitle">Day 1 · Strength A · No equipment needed</p>
+<div class="workout-row"><div class="time">0–5 min</div><div><strong>Warm up</strong><span class="muted">March in place, shoulder circles, gentle side steps.</span></div></div>
+<div class="workout-row"><div class="time">5–20 min</div><div><strong>Main workout</strong><span class="muted" id="mainWorkout">Squats to a chair, wall push-ups, glute bridges, bird-dogs.</span></div></div>
+<div class="workout-row"><div class="time">20–25 min</div><div><strong>Easy cardio</strong><span class="muted">Comfortable walking or marching in place.</span></div></div>
+<div class="workout-row"><div class="time">25–30 min</div><div><strong>Cool down</strong><span class="muted">Gentle stretches and slow breathing.</span></div></div>
+<h3 style="font-size:15px">Exercise guide</h3>
+<ul class="exercise-list"><li><b>Chair squats:</b> sit back toward a sturdy chair and stand up slowly.</li><li><b>Wall push-ups:</b> hands on wall, body straight, bend and press away.</li><li><b>Glute bridges:</b> lie on your back, knees bent, gently lift hips.</li><li><b>Bird-dogs:</b> on hands and knees, extend opposite arm and leg with control.</li><li><b>Dead bugs:</b> on your back, lower opposite arm and leg slowly if comfortable.</li></ul>
+<p class="note">Start with 1–2 comfortable rounds and rest when needed. Stop if you feel sharp pain, dizziness or unusual shortness of breath.</p>
+</section>
+<section id="meals" class="panel section">
+<h2>🍲 Practical Indian meal ideas</h2><p class="muted">Flexible ideas, not a strict diet. Eat enough to feel satisfied; adjust portions to your hunger and needs.</p>
+<div class="meal-grid">
+<div class="meal"><b>Breakfast</b><p>Idli or dosa with sambar and egg; or oats with milk, nuts and fruit.</p></div>
+<div class="meal"><b>Lunch</b><p>Rice or chapati with chicken, fish, egg or dal, plus vegetables and curd.</p></div>
+<div class="meal"><b>Snack</b><p>Fruit, roasted chana, yogurt, milk, nuts or a boiled egg.</p></div>
+<div class="meal"><b>Dinner</b><p>Chapati or rice with fish/chicken/egg/dal and vegetables.</p></div>
+</div>
+<p class="note">Drink water regularly. No food needs to be labelled “bad,” and you do not need to skip meals or count every calorie.</p>
+</section>
+</div>
+<div>
+<section id="habits" class="panel section">
+<h2>🌿 Daily healthy habits</h2><p class="muted">Tick each one when you've done it today.</p>
+<div class="checklist" id="habitsList">
+<label class="check"><input type="checkbox" data-habit="workout"><span>Completed movement or workout</span></label>
+<label class="check"><input type="checkbox" data-habit="food"><span>Ate balanced, satisfying meals</span></label>
+<label class="check"><input type="checkbox" data-habit="water"><span>Drank water regularly</span></label>
+<label class="check"><input type="checkbox" data-habit="sleep"><span>Made time for 7–9 hours of sleep</span></label>
+</div><p class="note">A missed habit is not a failure. Just continue with the next opportunity.</p>
+</section>
+<section id="progress" class="panel section">
+<h2>✨ Your progress</h2><p class="muted">Track how you feel, not only how you look.</p>
+<div style="display:grid;gap:12px;margin-top:15px">
+<label>Strength & stamina <select id="strength" style="display:block;width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:white;margin-top:5px"><option>Not started yet</option><option>Getting started</option><option>Improving</option><option>Feeling stronger</option></select></label>
+<label>Energy & mood <select id="energy" style="display:block;width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:white;margin-top:5px"><option>Not started yet</option><option>Up and down</option><option>Improving</option><option>Feeling good</option></select></label>
+<label>Posture & flexibility <select id="posture" style="display:block;width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:white;margin-top:5px"><option>Not started yet</option><option>Getting started</option><option>Improving</option><option>Feeling more flexible</option></select></label>
+<label>How I feel today <textarea id="journal" rows="3" placeholder="Example: I felt more energetic after walking…" style="display:block;width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;margin-top:5px"></textarea></label>
+<button class="btn" id="saveProgress">Save today's reflection</button><div class="toast" id="savedMsg" aria-live="polite"></div>
+</div>
+</section>
+<section class="panel">
+<h2>🗓️ Weekly plan</h2><p class="muted">Repeat gently; adapt to your energy.</p>
+<div class="week-grid">
+<div class="week"><b>Week 1 · Days 1–7</b>Learn the moves, start easy, take rest days.</div>
+<div class="week"><b>Week 2 · Days 8–14</b>Build consistency; add a round only if comfortable.</div>
+<div class="week"><b>Week 3 · Days 15–21</b>Practice controlled reps and steady walking.</div>
+<div class="week"><b>Week 4 · Days 22–30</b>Keep good form, notice improvements, celebrate consistency.</div>
+</div>
+</section>
+<section class="panel"><h2>💌 A little reminder</h2><p style="font-size:19px;font-weight:800;color:#b23d77">Progress, not perfection.</p><p class="muted">Your worth isn't measured by a scale or a photo. Thirty days is a start, not a deadline. Rest is part of training, and visible changes vary from person to person.</p></section>
+</div>
+</div>
+<div class="footer">Better habits ♥ Brighter you</div>
+</main>
+</div>
+<script>
+(function(){
+const KEY='my30dayTransformation_v1';
+const defaults={done:[],habits:{},strength:'Not started yet',energy:'Not started yet',posture:'Not started yet',journal:''};
+let data={...defaults};
+try{const saved=JSON.parse(localStorage.getItem(KEY)||'{}');data={...defaults,...saved,habits:saved.habits||{}}}catch(e){}
+const $=id=>document.getElementById(id);
+function save(){try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){}}
+function dayType(n){if([3,6,10,13,17,20,24,27].includes(n))return 'Rest / gentle mobility';if(n%3===1)return 'Strength A';if(n%3===2)return 'Walk + core';return 'Strength B'}
+function renderCalendar(){
+ const cal=$('calendar');cal.innerHTML='';
+ for(let n=1;n<=30;n++){const b=document.createElement('button');b.className='day'+(data.done.includes(n)?' done':'')+(n===1?' today':'')+([3,6,10,13,17,20,24,27].includes(n)?' rest':'');b.innerHTML='<strong>'+(data.done.includes(n)?'✓ ':'' )+n+'</strong><small>'+(dayType(n).startsWith('Rest')?'Rest': 'Day '+n)+'</small>';b.setAttribute('aria-label','Day '+n+', '+(data.done.includes(n)?'completed':'not completed')+'. Tap to toggle.');b.addEventListener('click',()=>{data.done=data.done.includes(n)?data.done.filter(x=>x!==n):[...data.done,n].sort((a,b)=>a-b);save();render()});cal.appendChild(b)}
+}
+function render(){
+ renderCalendar();
+ $('workoutCount').textContent=data.done.length;
+ const hc=Object.values(data.habits).filter(Boolean).length;
+ $('habitCount').textContent=hc+'/4';
+ $('percent').textContent=Math.round(data.done.length/30*100)+'%';
+ $('dayBadge').textContent=Math.min(30,data.done.length+1);
+ document.querySelectorAll('[data-habit]').forEach(el=>{el.checked=!!data.habits[el.dataset.habit];el.closest('.check').classList.toggle('done',el.checked)});
+ const today=Math.min(30,data.done.length+1);const type=dayType(today);
+ $('workoutTitle').textContent='Day '+today+' · '+type+' · No equipment needed';
+ $('mainWorkout').textContent=type.startsWith('Rest')?'Rest or do gentle mobility and an easy walk if you feel like it.':type==='Walk + core'?'Comfortable walking or marching, dead bugs and bird-dogs at an easy pace.':type==='Strength A'?'Chair squats, wall push-ups, glute bridges and bird-dogs.':'Supported reverse lunges or sit-to-stands, wall push-ups, glute bridges and dead bugs.';
+ ['strength','energy','posture'].forEach(id=>$(id).value=data[id]||defaults[id]);
+ $('journal').value=data.journal||'';
+}
+document.querySelectorAll('[data-habit]').forEach(el=>el.addEventListener('change',()=>{data.habits[el.dataset.habit]=el.checked;save();render()}));
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-go]').forEach(x=>x.classList.remove('active'));b.classList.add('active');$(b.dataset.go).scrollIntoView({behavior:'smooth',block:'start'})}));
+$('reset').addEventListener('click',()=>{if(confirm('Reset all 30-day checkmarks and reflections on this device?')){data={...defaults,done:[],habits:{}};save();render();$('message').textContent='Tracker reset. You can begin again whenever you are ready.'}});
+$('saveProgress').addEventListener('click',()=>{['strength','energy','posture'].forEach(id=>data[id]=$(id).value);data.journal=$('journal').value;save();$('savedMsg').textContent='Reflection saved on this device ♥'});
+render();
+})();
+</script>
+</body>
+</html>
